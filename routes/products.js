@@ -19,6 +19,7 @@ Product.findById(req.params.id, (err, data) => {
     })
 });
 
+// add a new product
 router.post('/',function(req,res,next){
     Product.create(req.body,(error,data)=>{
         if (error) throw error;
